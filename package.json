@@ -4,6 +4,9 @@
   "description": "training project brain-games",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brains-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
