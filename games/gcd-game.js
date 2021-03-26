@@ -8,13 +8,18 @@ const gameQuestion = () => {
   return numbers;
 };
 
+const isCommonDivisor = (firstNum, secondNum, divisor) => {
+  const flag = firstNum % divisor === 0 && secondNum % divisor === 0;
+  if (flag) return true;
+  return false;
+};
+
 const setCorrectAnswer = (question) => {
   let maxDivisor = 0;
   const [firstNum, secondNum] = question.split(' ');
   for (let divisor = 1; divisor <= firstNum; divisor += 1) {
-    const firstDivisor = firstNum % divisor === 0;
-    const secondDivisor = secondNum % divisor === 0;
-    if (firstDivisor && secondDivisor) {
+    const commonDivisor = isCommonDivisor(firstNum, secondNum, divisor);
+    if (commonDivisor) {
       if (maxDivisor < divisor) {
         maxDivisor = divisor;
       }
