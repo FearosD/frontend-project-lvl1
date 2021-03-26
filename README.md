@@ -8,3 +8,5 @@
 https://
 ### Asciinema (6 step, install and run brain-calc)
 https://
+### Asciinema (7 step, install and run brain-gcd)
+https://
