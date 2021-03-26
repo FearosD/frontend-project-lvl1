@@ -6,3 +6,5 @@
 [![Run-linter](https://github.com/FearosD/frontend-project-lvl1/actions/workflows/run-linter.yml/badge.svg)](https://github.com/FearosD/frontend-project-lvl1/actions/workflows/run-linter.yml)
 ### Asciinema (5 step, install and run brain-even)
 https://
+### Asciinema (6 step, install and run brain-calc)
+https://
