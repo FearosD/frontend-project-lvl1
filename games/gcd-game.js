@@ -12,8 +12,9 @@ const setCorrectAnswer = (question) => {
   let maxDivisor = 0;
   const [firstNum, secondNum] = question.split(' ');
   for (let divisor = 1; divisor <= firstNum; divisor += 1) {
-    const flag = firstNum % divisor === 0 && secondNum % divisor === 0;
-    if (flag) {
+    const firstDivisor = firstNum % divisor === 0;
+    const secondDivisor = secondNum % divisor === 0;
+    if (firstDivisor && secondDivisor) {
       maxDivisor = maxDivisor > divisor ? maxDivisor : divisor;
     }
   }
