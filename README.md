@@ -12,3 +12,5 @@ https://
 https://
 ### Asciinema (8 step, install and run brain-progression)
 https://
+### Asciinema (8 step, install and run brain-prime)
+https://
