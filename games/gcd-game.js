@@ -19,11 +19,7 @@ const setCorrectAnswer = (question) => {
   const [firstNum, secondNum] = question.split(' ');
   for (let divisor = 1; divisor <= firstNum; divisor += 1) {
     const commonDivisor = isCommonDivisor(firstNum, secondNum, divisor);
-    if (commonDivisor) {
-      if (maxDivisor < divisor) {
-        maxDivisor = divisor;
-      }
-    }
+    if (commonDivisor) maxDivisor = divisor;
   }
   return maxDivisor.toString();
 };
