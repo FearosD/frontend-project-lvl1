@@ -35,8 +35,15 @@ const setCorrectAnswer = (question) => {
   const progression = question.split(' ');
   const stepProgression = findStepProgression(progression);
   const hiddenIndex = progression.indexOf('..');
-  const prevCorrectValue = Number(progression[hiddenIndex - 1]);
-  const correctValue = prevCorrectValue + stepProgression;
+  let nearValue = 0;
+  let correctValue = 0;
+  if (hiddenIndex === 0) {
+    nearValue = Number(progression[hiddenIndex + 1]);
+    correctValue = nearValue - stepProgression;
+  } else {
+    nearValue = Number(progression[hiddenIndex - 1]);
+    correctValue = nearValue + stepProgression;
+  }
   return correctValue.toString();
 };
 
