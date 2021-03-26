@@ -14,7 +14,7 @@ const setCorrectAnswer = (question) => {
     return correctAnswer;
   }
   let isPrime = true;
-  for (let value = 2; value < 10; value += 1) {
+  for (let value = 2; value < question; value += 1) {
     if (question % value === 0) {
       isPrime = false;
       break;
