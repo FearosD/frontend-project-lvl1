@@ -10,3 +10,5 @@ https://
 https://
 ### Asciinema (7 step, install and run brain-gcd)
 https://
+### Asciinema (8 step, install and run brain-progression)
+https://
