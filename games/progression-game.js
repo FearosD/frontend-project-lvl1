@@ -48,7 +48,7 @@ const setCorrectAnswer = (question) => {
 };
 
 const gameStart = () => {
-  const gamesRules = 'Find the greatest common divisor of given numbers.';
+  const gamesRules = 'What number is missing in the progression?';
   const gameData = [gamesRules, gameQuestion, setCorrectAnswer];
   gameController(gameData);
 };
