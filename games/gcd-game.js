@@ -15,7 +15,9 @@ const setCorrectAnswer = (question) => {
     const firstDivisor = firstNum % divisor === 0;
     const secondDivisor = secondNum % divisor === 0;
     if (firstDivisor && secondDivisor) {
-      maxDivisor = maxDivisor > divisor ? maxDivisor : divisor;
+      if (maxDivisor < divisor) {
+        maxDivisor = divisor;
+      }
     }
   }
   return maxDivisor.toString();
